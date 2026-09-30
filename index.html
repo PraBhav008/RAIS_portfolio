@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAIS &mdash; A creative full-stack developer portfolio showcasing modern, immersive web experiences." />
+  <title>RAIS &mdash; Creative Web Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo/RAIS_logo.jpeg" />
+  <link rel="apple-touch-icon" href="assets/logo/RAIS_logo.jpeg" />
+
+  <!-- Hoover Font -->
+  <link rel="stylesheet" href="assets/fonts/Hoover-Web/css/hoover.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Preconnect to iframe project domains for faster loading -->
+  <link rel="preconnect" href="https://prabhav008.github.io" crossorigin />
+  <link rel="dns-prefetch" href="https://prabhav008.github.io" />
+
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="top" class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#hero" class="logo" aria-label="RAIS Home">
+        <img src="assets/logo/RAIS_logo.jpeg" alt="RAIS Logo" class="logo-img" />
+        <span class="logo-text">RAIS</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="header-nav" id="desktopNav" aria-label="Primary">
+        <a href="#hero" class="nav-link">
+          <span>Home</span>
+        </a>
+        <a href="#projects" class="nav-link">
+          <span>Projects</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#reviews" class="nav-link">
+          <span>Reviews</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#about" class="nav-link">
+          <span>About</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#contact" class="nav-link">
+          <span>Contact</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+      </nav>
+
+      <!-- Hamburger button (mobile only) -->
+      <button
+        class="hamburger"
+        id="menuToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span class="ham-bar bar-top"></span>
+        <span class="ham-bar bar-mid"></span>
+        <span class="ham-bar bar-bot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+    <div class="mobile-menu-inner">
+      <!-- Close button -->
+      <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Nav links -->
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#hero"     class="mobile-nav-link" data-menu-close>
+          <span class="mobile-nav-num">01</span>
+          <span class="mobile-nav-text">Home</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#projects"  class="mobile-nav-link" data-menu-close>
+          <span class="mobile-nav-num">02</span>
+          <span class="mobile-nav-text">Projects</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#reviews"   class="mobile-nav-link" data-menu-close>
+          <span class="mobile-nav-num">03</span>
+          <span class="mobile-nav-text">Reviews</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#about"     class="mobile-nav-link" data-menu-close>
+          <span class="mobile-nav-num">04</span>
+          <span class="mobile-nav-text">About</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+        <a href="#contact"   class="mobile-nav-link" data-menu-close>
+          <span class="mobile-nav-num">05</span>
+          <span class="mobile-nav-text">Contact</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+        </a>
+      </nav>
+
+      <!-- Quick contact in menu footer -->
+      <div class="mobile-menu-footer">
+        <a href="tel:+919313220611" class="mobile-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 93132 20611
+        </a>
+        <a href="tel:+916356402548" class="mobile-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 63564 02548
+        </a>
+        <a href="https://github.com/PraBhav008" target="_blank" rel="noopener noreferrer" class="mobile-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <span class="mobile-menu-location">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ahmedabad, Gujarat
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu backdrop -->
+  <div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+
+  <main id="main" role="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-tagline-wrap">
+          <span class="hero-label">Full-Stack Developer &amp; Designer</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line">Crafting</span>
+          <span class="hero-title-line accent">Bold</span>
+          <span class="hero-title-line">Digital Worlds.</span>
+        </h1>
+        <p class="hero-desc">Minimal code. Maximum impact. Experiences built for every screen, front to back.</p>
+        <div class="hero-cta-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Say Hello &rarr;</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Jewellery</span><span class="dot">&middot;</span>
+        <span>E-Commerce</span><span class="dot">&middot;</span>
+        <span>Real Estate</span><span class="dot">&middot;</span>
+        <span>Furniture</span><span class="dot">&middot;</span>
+        <span>Full-Stack</span><span class="dot">&middot;</span>
+        <span>UI / UX</span><span class="dot">&middot;</span>
+        <span>Ahmedabad</span><span class="dot">&middot;</span>
+        <span>Jewellery</span><span class="dot">&middot;</span>
+        <span>E-Commerce</span><span class="dot">&middot;</span>
+        <span>Real Estate</span><span class="dot">&middot;</span>
+        <span>Furniture</span><span class="dot">&middot;</span>
+        <span>Full-Stack</span><span class="dot">&middot;</span>
+        <span>UI / UX</span><span class="dot">&middot;</span>
+        <span>Ahmedabad</span><span class="dot">&middot;</span>
+      </div>
+    </div>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Jewellery -->
+        <article class="project-card" data-index="01">
+          <a href="https://prabhav008.github.io/professional_jewel_web/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Professional Jewel Website">
+            <div class="project-card-inner">
+              <div class="project-preview">
+                <div class="project-iframe-wrap">
+                  <iframe src="https://prabhav008.github.io/professional_jewel_web/" title="Professional Jewel Website" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-forms allow-popups"></iframe>
+                </div>
+                <div class="project-preview-badge">
+                  <span>01</span>
+                </div>
+                <div class="project-tap-overlay"><span class="tap-overlay-label">👆 Tap to Visit</span><span class="tap-overlay-hint">Tap again to open site</span></div><div class="project-glow-ring"></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-info">
+                  <h3 class="project-name">Professional Jewel</h3>
+                  <p class="project-tagline">Luxury jewellery showcase with elegant product presentation</p>
+                  <div class="project-tags">
+                    <span class="tag">Jewellery</span>
+                    <span class="tag">UI Design</span>
+                    <span class="tag">HTML/CSS</span>
+                  </div>
+                </div>
+                <span class="project-cta">
+                  Visit Site
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 2: E-Commerce -->
+        <article class="project-card" data-index="02">
+          <a href="https://prabhav008.github.io/varsha_ecommerce_web/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Varsha E-Commerce Website">
+            <div class="project-card-inner">
+              <div class="project-preview">
+                <div class="project-iframe-wrap">
+                  <iframe src="https://prabhav008.github.io/varsha_ecommerce_web/" title="Varsha E-Commerce Website" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-forms allow-popups"></iframe>
+                </div>
+                <div class="project-preview-badge">
+                  <span>02</span>
+                </div>
+                <div class="project-tap-overlay"><span class="tap-overlay-label">👆 Tap to Visit</span><span class="tap-overlay-hint">Tap again to open site</span></div><div class="project-glow-ring"></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-info">
+                  <h3 class="project-name">Varsha E-Commerce</h3>
+                  <p class="project-tagline">Modern online store with seamless shopping experience</p>
+                  <div class="project-tags">
+                    <span class="tag">E-Commerce</span>
+                    <span class="tag">Shopping</span>
+                    <span class="tag">Responsive</span>
+                  </div>
+                </div>
+                <span class="project-cta">
+                  Visit Site
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 3: Real Estate -->
+        <article class="project-card" data-index="03">
+          <a href="https://prabhav008.github.io/e-state-demo-website/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open E-State Demo Website">
+            <div class="project-card-inner">
+              <div class="project-preview">
+                <div class="project-iframe-wrap">
+                  <iframe src="https://prabhav008.github.io/e-state-demo-website/" title="E-State Demo Website" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-forms allow-popups"></iframe>
+                </div>
+                <div class="project-preview-badge">
+                  <span>03</span>
+                </div>
+                <div class="project-tap-overlay"><span class="tap-overlay-label">👆 Tap to Visit</span><span class="tap-overlay-hint">Tap again to open site</span></div><div class="project-glow-ring"></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-info">
+                  <h3 class="project-name">E-State Demo</h3>
+                  <p class="project-tagline">Real estate platform with property listings &amp; smart search</p>
+                  <div class="project-tags">
+                    <span class="tag">Real Estate</span>
+                    <span class="tag">Listings</span>
+                    <span class="tag">UX</span>
+                  </div>
+                </div>
+                <span class="project-cta">
+                  Visit Site
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 4: Furniture -->
+        <article class="project-card" data-index="04">
+          <a href="https://prabhav008.github.io/demo_furniture/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Demo Furniture Website">
+            <div class="project-card-inner">
+              <div class="project-preview">
+                <div class="project-iframe-wrap">
+                  <iframe src="https://prabhav008.github.io/demo_furniture/" title="Demo Furniture Website" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-forms allow-popups"></iframe>
+                </div>
+                <div class="project-preview-badge">
+                  <span>04</span>
+                </div>
+                <div class="project-tap-overlay"><span class="tap-overlay-label">👆 Tap to Visit</span><span class="tap-overlay-hint">Tap again to open site</span></div><div class="project-glow-ring"></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-info">
+                  <h3 class="project-name">Demo Furniture</h3>
+                  <p class="project-tagline">Contemporary furniture brand with immersive catalog design</p>
+                  <div class="project-tags">
+                    <span class="tag">Furniture</span>
+                    <span class="tag">Catalog</span>
+                    <span class="tag">Branding</span>
+                  </div>
+                </div>
+                <span class="project-cta">
+                  Visit Site
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section id="reviews" class="reviews-section">
+      <div class="reviews-header">
+        <span class="section-label">Client Feedback</span>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+
+      <div class="reviews-carousel-wrap" role="region" aria-label="Client Reviews">
+
+        <!-- Single viewport window -->
+        <div class="reviews-viewport" id="reviewsViewport">
+          <div class="reviews-track" id="reviewsTrack">
+
+            <!-- Review 1 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>MK</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Meera Kapoor</strong>
+                  <span class="review-role">Owner, Kapoor Jewels &mdash; Ahmedabad</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "The jewellery website RAIS built for us completely transformed our online presence. The design is elegant, loads lightning-fast, and our customers constantly compliment how easy it is to browse. Sales from the website have gone up by 40% since launch!"
+              </blockquote>
+              <div class="review-project-tag">Professional Jewel Website</div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>RP</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Rajesh Patel</strong>
+                  <span class="review-role">Director, Patel Enterprises &mdash; Surat</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "We hired RAIS for our e-commerce platform and honestly couldn't be happier. The checkout flow is seamless, the mobile experience is flawless, and the backend is rock solid. It felt less like working with a developer and more like working with a partner who truly cared."
+              </blockquote>
+              <div class="review-project-tag">Varsha E-Commerce</div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>AS</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Ananya Shah</strong>
+                  <span class="review-role">CEO, Landmark Realty &mdash; Ahmedabad</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "Our real estate listings portal needed to be fast, beautiful, and easy to update &mdash; RAIS delivered on all three. The property search feature works brilliantly, and we've received fantastic feedback from agents and buyers alike. Highly recommend!"
+              </blockquote>
+              <div class="review-project-tag">E-State Demo Website</div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>VD</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Vikram Desai</strong>
+                  <span class="review-role">Founder, Woodcraft Living &mdash; Baroda</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "The furniture catalog website looks absolutely stunning. Every product photo is displayed beautifully and the browsing experience feels premium. Our showroom footfall has actually increased because people see the website and want to visit in person. Incredible work!"
+              </blockquote>
+              <div class="review-project-tag">Demo Furniture Website</div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>NJ</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Nisha Joshi</strong>
+                  <span class="review-role">Marketing Head, StyleHouse &mdash; Ahmedabad</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "What sets RAIS apart is the attention to detail. Every section was thoughtfully crafted, mobile performance was exceptional, and the team was responsive throughout. Delivered ahead of schedule and within budget. We're already planning our next project with them!"
+              </blockquote>
+              <div class="review-project-tag">Web Design &amp; Development</div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card" role="article">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true"><span>SM</span></div>
+                <div class="review-author-info">
+                  <strong class="review-name">Suresh Mehta</strong>
+                  <span class="review-role">Partner, Mehta &amp; Sons Retail &mdash; Gandhinagar</span>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+              <blockquote class="review-text">
+                "Professional, creative, and technically brilliant. RAIS understood our vision immediately and translated it into a website that exceeded our expectations. The backend is smooth, admin panel is easy to manage, and the site performs well even on slow networks."
+              </blockquote>
+              <div class="review-project-tag">Full-Stack Development</div>
+            </div>
+
+          </div><!-- /.reviews-track -->
+        </div><!-- /.reviews-viewport -->
+
+        <!-- Counter -->
+        <div class="reviews-counter" id="reviewsCounter" aria-live="polite" aria-atomic="true">
+          <span id="reviewsCurrent">1</span> / <span id="reviewsTotal">6</span>
+        </div>
+
+        <!-- Dots navigation -->
+        <div class="reviews-dots" id="reviewsDots" role="tablist" aria-label="Review navigation"></div>
+
+        <!-- Arrow buttons -->
+        <div class="reviews-arrows">
+          <button class="reviews-arrow reviews-prev" id="reviewsPrev" aria-label="Previous review">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path stroke="currentColor" stroke-linecap="square" d="M14 8H3.4M7.3 3L2.7 8l4.6 5"/></svg>
+          </button>
+          <button class="reviews-arrow reviews-next" id="reviewsNext" aria-label="Next review">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+          </button>
+        </div>
+
+      </div><!-- /.reviews-carousel-wrap -->
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+
+    <section id="about" class="about-section">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-label">About</span>
+          <h2 class="about-title">Building the web,<br><em>front to back.</em></h2>
+          <div class="about-deco-block" aria-hidden="true">
+            <div class="deco-circle c1"></div>
+            <div class="deco-circle c2"></div>
+            <div class="deco-circle c3"></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">
+            I'm <strong>RAIS</strong> &mdash; a full-stack developer with a passion for building visually rich, fast, and accessible websites. From crafting pixel-perfect interfaces to building robust backends, every project is a chance to push the boundary between design and technology.
+          </p>
+          <hr class="dashed-rule" />
+          <div class="skills-block">
+            <h3 class="skills-label">Deliverables</h3>
+            <ul class="skills-list">
+              <li>Full-Stack Web Development</li>
+              <li>Responsive &amp; Mobile-First Design</li>
+              <li>UI / UX Design</li>
+              <li>Brand &amp; Web Identity</li>
+              <li>E-Commerce Solutions</li>
+            </ul>
+          </div>
+          <hr class="dashed-rule" />
+          <div class="tools-block">
+            <h3 class="skills-label">Tools &amp; Tech</h3>
+            <div class="tools-tags">
+              <span class="tool-tag">HTML</span>
+              <span class="tool-tag">CSS</span>
+              <span class="tool-tag">JavaScript</span>
+              <span class="tool-tag">Node.js</span>
+              <span class="tool-tag">React</span>
+              <span class="tool-tag">MySQL</span>
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact-section">
+      <div class="contact-inner">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="contact-title">Got a project?<br><em>I'm all ears.</em></h2>
+        <p class="contact-sub">Drop a message or call &mdash; let's build something remarkable together.</p>
+
+        <div class="contact-details">
+          <!-- Email placeholder -->
+          <a href="mailto:raisstudios.support@gmail.com" class="contact-detail-row contact-email-link">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </span>
+            <span>raisstudios.support@gmail.com</span>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+          </a>
+
+          <!-- Phone 1 -->
+          <a href="tel:+919313220611" class="contact-detail-row">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>+91 93132 20611</span>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+          </a>
+
+          <!-- Phone 2 -->
+          <a href="tel:+916356402548" class="contact-detail-row">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>+91 63564 02548</span>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path stroke="currentColor" stroke-linecap="square" d="M2 8h10.6M8.7 3l4.6 5-4.6 5"/></svg>
+          </a>
+
+          <!-- Location -->
+          <div class="contact-detail-row contact-detail-static">
+            <span class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Ahmedabad, Gujarat, India</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/PraBhav008" target="_blank" rel="noopener noreferrer" class="social-link social-link--github" aria-label="Visit GitHub profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="contact-big-text" aria-hidden="true">RAIS</div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="assets/logo/RAIS_logo.jpeg" alt="RAIS" class="footer-logo-img" />
+        <span class="footer-copy"> &copy; 2026 RAIS &mdash; Ahmedabad, Gujarat</span>
+      </div>
+      <a href="#hero" class="footer-back-top" aria-label="Back to top">
+        Back to top
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-linecap="square" d="M8 14V3.4M3 8l5-5 5 5"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
